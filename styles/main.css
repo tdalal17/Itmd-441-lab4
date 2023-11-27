@@ -1,20 +1,91 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-header, footer {
-    text-align: center;
-}
-
-#data-display {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
+html {
+    min-height: 100%;
+    background-image: url('../weather-Report.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+  
+  body	{
+    position: relative;
+  }
+  
+  #title, #heading  {
+    color: yellow;
+  }
+  
+  #assignmentName {
+    margin-left: 16px;
+    margin-top: 16px;
+    font-size: 1.5em;
+  }
+  
+  #heading {
+      text-align: center;
+    font-size: 72px;
+    margin-top: 16px;
+  }
+  
+  #form-container {
+    background-color: white;
+      text-align: center;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .form-field {
+    padding-top: 16px;
+  }
+  
+  .location, .geo_location_name_button,
+  .location_name_button {
+    font-weight: bold;
+  }
+  
+  #Region {
+    margin-bottom: 0;
+  }
+  
+  #flex-section ul,
+  #flex-section2 ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  #flex-section li,
+  #flex-section2 li {
+      flex: wrap;
+      flex: 200px;
+  
+  }
+  
+  #flex-section .item1,
+  #flex-section2 .item5 {
+      order: 1;
+  }
+  
+  #flex-section .item2,
+  #flex-section2 .item6 {
+      order: 2;
+  }
+  
+  #flex-section .item3,
+  #flex-section2 .item7 {
+      order: 3;
+  }
+  
+  #flex-section .item4 {
+      order: 4;
+  }
+  
+  #flex-section .item5 {
+      order: 5;
+  }
+  
+  #flex-section2 .item7  {
+    margin-bottom: 16px;
+  }
+  

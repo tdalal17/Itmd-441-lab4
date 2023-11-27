@@ -1,33 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunrise and Sunset Times</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+    <title>ITMD-441 Lab 4</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/main.js"></script>
+  </head>
+  <body id="main">
+    <section id="title">
+      <h3 id="assignmentName">ITMD 441 - Lab 4 - Rafael Armenta</h3>
+    </section>
+    <div id="main-container">
+      <h1 id="heading">Weather API Dashboard</h1>
+      <div id="form-container">
+          <div class="form-field">
+            <label class="location">Please Enter Location Name/Coordinates:</label>
+            <input type="text" class="textbox" id="location_name_field" name="location_name_field">
+            <button onclick="getLocation()" class="geo_location_name_button" id="geo_location_name_button">Use my location</button>
+            <button onclick="returnLocation()" class="location_name_button" id="location_name_button">Submit</button>
+          </div>
+          <div id="Weather-Report">
+            <p id="Region">Region: Your Location</p>
+            <h3 id="Current-Conditions">Current Conditions:</h3>
+            <p id="DayHour">Dayhour: Current Time</p>
+            <p id="Temp">Temperature: Current Temperature</p>
+            <p id="Precip">Precipitation: Current Precipitation</p>
+            <p id="Humidity">Humidity: Current Humidity</p>
+            <p id="Wind">Wind: Current Wind</p>
+            <p id="Comment">Additional Comments:</p>
+            <img id="weather-icon" src="" alt="">
+            <section id="flex-section">
+              <nav>
+                <ul>
+                  <li class="item1">
+                    <h3 id="Day1">Day of the Week: </h3>
+                    <p id="Max_Temp1">Max Temperature: </p>
+                    <p id="Min_Temp1">Min Temperature: </p>
+                    <p id="Comment1">Comment: </p>
+                    <img id="weather-icon1" src="" alt="">
+                  </li>
+                  <li class="item2">
+                    <h3 id="Day2">Day of the Week: </h3>
+                    <p id="Max_Temp2">Max Temperature: </p>
+                    <p id="Min_Temp2">Min Temperature: </p>
+                    <p id="Comment2">Comment: </p>
+                    <img id="weather-icon2" src="" alt="">
+                  </li>
+                  <li class="item3">
+                    <h3 id="Day3">Day of the Week: </h3>
+                    <p id="Max_Temp3">Max Temperature: </p>
+                    <p id="Min_Temp3">Min Temperature: </p>
+                    <p id="Comment3">Comment: </p>
+                    <img id="weather-icon3" src="" alt="">
+                  </li>
+                  <li class="item4">
+                    <h3 id="Day4">Day of the Week: </h3>
+                    <p id="Max_Temp4">Max Temperature: </p>
+                    <p id="Min_Temp4">Min Temperature: </p>
+                    <p id="Comment4">Comment: </p>
+                    <img id="weather-icon4" src="" alt="">
+                  </li>
 
-</head>
-<body>
-    <header>
-        <h1>Sunrise and Sunset Times</h1>
-    </header>
-    <main>
-        
-        <button id="geolocation-btn">Use Current Location</button> 
-        <select id="predefined-locations">
-        </select>
-
-        <input type="text" id="location-search" placeholder="Enter a location">
-
-        <div id="data-display">
-        </div>
-    </main>
-
-    <footer>
-        <p>Credits to Sunrise-Sunset API and Geocode API</p>
-    </footer>
-
-    <script src="scripts/main.js"></script>
-</body>
+                </ul>
+              </nav>
+            </section>
+            <section id="flex-section2">
+              <nav>
+                <ul>
+                  <li class="item5">
+                    <h3 id="Day5">Day of the Week: </h3>
+                    <p id="Max_Temp5">Max Temperature: </p>
+                    <p id="Min_Temp5">Min Temperature: </p>
+                    <p id="Comment5">Comment: </p>
+                    <img id="weather-icon5" src="" alt="">
+                  </li>
+                  <li class="item6">
+                    <h3 id="Day6">Day of the Week: </h3>
+                    <p id="Max_Temp6">Max Temperature: </p>
+                    <p id="Min_Temp6">Min Temperature: </p>
+                    <p id="Comment6">Comment: </p>
+                    <img id="weather-icon6" src="" alt="">
+                  </li>
+                  <li class="item7">
+                    <h3 id="Day7">Day of the Week: </h3>
+                    <p id="Max_Temp7">Max Temperature: </p>
+                    <p id="Min_Temp7">Min Temperature: </p>
+                    <p id="Comment7">Comment: </p>
+                    <img id="weather-icon7" src="" alt="">
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+      </div>
+    </div>
+  </body>
 </html>
